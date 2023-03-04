@@ -14,14 +14,14 @@
 
 
 
-            while (!Int32.TryParse(Console.ReadLine(), out noCandidatos) || noCandidatos < 1)
+            while (!Int32.TryParse(Console.ReadLine(), out noCandidatos) || noCandidatos <= 1)
             {
                 Console.WriteLine("No mame ingrese un numero valido mayor que 1");
                 Console.WriteLine("Ingrese el numero de candidatos:");
             }
 
             Console.WriteLine("Ingrese el numero de votantes:");
-            while (!Int32.TryParse(Console.ReadLine(), out noVotantes) || noVotantes < 0)
+            while (!Int32.TryParse(Console.ReadLine(), out noVotantes) || noVotantes <= 0)
             {
                 Console.WriteLine("No mame ingrese un numero valido mayor que 0");
                 Console.WriteLine("Ingrese el numero de votantes:");
